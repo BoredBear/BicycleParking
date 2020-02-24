@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ElevatorController : MonoBehaviour {
 
@@ -22,7 +20,7 @@ public class ElevatorController : MonoBehaviour {
     private int currentLevel = 0;
     public int angle = 0;
     private int currentAngle = 0;
-    private readonly float max = 0.051f;
+    private readonly float max = 0.062f;//0.051f;
     private readonly float min = -0.0377f;
     public bool isCompleted = true;
     public bool desiredState = false;

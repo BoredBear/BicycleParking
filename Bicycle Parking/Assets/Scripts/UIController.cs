@@ -28,7 +28,7 @@ public class UIController : MonoBehaviour {
         {
             if (lastSpawnedBicycle.GetComponent<FixedJoint>().connectedBody == null)
             {
-                lastSpawnedBicycle.transform.position -= lastSpawnedBicycle.transform.right * 0.03f;
+                lastSpawnedBicycle.transform.position -= lastSpawnedBicycle.transform.right * 0.005f;
             } else
             {
                 isAttach = false;
@@ -86,5 +86,10 @@ public class UIController : MonoBehaviour {
             system.ParkingBicycle();
         }
         dropdown.GetComponent<Dropdown>().ClearOptions();
+    }
+
+    public void FindNewCard(string card)
+    {
+        system.FindNewCard(card);
     }
 }
